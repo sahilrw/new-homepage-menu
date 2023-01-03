@@ -29,9 +29,8 @@ header {
     width: 73rem;
     margin: 1rem 0;
     font-size: 1.5rem;
-}
-#close-menu, #ham {
-    display: none
+    display: flex;
+    justify-content: space-between;
 }
 nav {
     display: flex;
