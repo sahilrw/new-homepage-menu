@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+body {
+    margin: auto;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    width: 60rem;
+    letter-spacing: 2px;
+    line-height: 22px;
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+header {
+    /* width: 100%; */
+    width: 73rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Dark-grayish-blue);
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+li {
+    margin-left: 3rem;
+}
+a{
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
+}
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    cursor: pointer;
+    color: var(--Soft-red);
+}
+header + section {
+    display: flex;
+    justify-content: space-between;
+    width: 73rem;
+    height: 33.5rem;
+    margin-bottom: 1rem;
+}
+main {
+    height: 33rem;
+    width: 48rem;
+}
+.img {
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    height: 20.4rem;
+    max-height: 400px;
+    width: 48rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+main > section {
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    width: 48rem;
+    padding: 2rem 0;
+}
+main > section > h1 {
+    margin-right: 1.4rem;
+    height: 11.4rem;
+    width: 23rem;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3rem;
+}
+main > section > div {
+    width: 23rem;
+}
+main > section > div > p{
+    font-size: 1.05rem;
+    padding-bottom: 0.5rem;
+    color: var(--Dark-grayish-blue);
+}
+main > section > div > button {
+    height: 3rem;
+    width: 10rem;
+}
+button{
+    border: none;
+    background: var(--Soft-red);
+    color: var(--Off-white);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+button:hover {
+    cursor: pointer;
+    background: var(--Very-dark-blue);
+}
+aside {
+    background: var(--Very-dark-blue);
+    width: 23rem;
+    height: 33rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside > span{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--Soft-orange);
+    padding-bottom: 1.2rem;
+}
+aside > div {
+    height: 12rem;
+    padding-top: 1rem;
+}
+.mid {
+    border-bottom: 2px solid var(--Off-white);
+    border-top: 2px solid var(--Off-white);
+}
+aside h2 {
+    color: var(--Off-white);
+    font-size: 1.2rem;
+    padding: 2px 0;
+    letter-spacing: 0.09rem;
+}
+aside h2:hover {
+    cursor: pointer;
+    color: var(--Soft-orange);
+}
+aside p {
+    padding: 2px 0;
+    color: var(--Grayish-blue);
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 73rem;
+    height: 8rem;
+}
+footer > section {
+    display: flex;
+    width: 23rem;
+}
+footer span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+footer h2:hover {
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+footer img {
+    width: 8rem;
+}
+footer > section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5px 0 10px;
+    height: 6rem;
+}
+#popular h2 {
+    letter-spacing: 0;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+#popular p {
+    line-height: 18px;
+    margin-top: 1rem;
+}
+.number {
+    font-size: 40px;
+}
+@media (max-width: 375px){
+    header{
+        width: 21rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hidden {
+        display: none;
+    }
+    .navbar {
+        position: absolute;
+        left: 7.2rem;
+        width: 14rem;
+        height: 0;
+        background: var(--Off-white);
+        transition: 0.7s;
+        /* opacity: 0; */
+    }
+    .show-sidebar {
+        height: 100rem;
+        opacity: 1;
+    }
+    ul{
+        display: block;
+        width: fit-content;
+        flex-direction: column;
+        margin-bottom: 52rem;
+        line-height: 0.5rem;
+    }
+    li {
+        padding: 2rem;
+    }
+    a{
+        letter-spacing: 0.01rem;
+        color: var(--Very-dark-blue);
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 97rem;
+        width: 23rem;
+    }
+    header + section {
+        width: 22rem;
+        height: 55rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #home {
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+    #home section h1 {
+        width: 21rem;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 6.8rem;
+    }
+    #home p {
+        width: 21rem;
+    }
+    main > section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img {
+        background: url(assets/images/image-web-3-mobile.jpg);
+        background-repeat: no-repeat;
+        width: 21rem;
+        height: 14rem;
+        background-size: cover;
+    }
+    aside {
+        margin-top: 6rem;
+        width: 21rem;
+        height: 22rem;
+        padding: 8px 12px;
+    }
+    aside span {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    aside > div {
+        height: 7rem;
+        margin: 4px 0;
+        padding: 4px 0;
+    }
+    footer {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 37rem;
+        width: 22rem;
+    }
+    footer section {
+        height: 8rem;
+        width: 21rem;
+    }
+    footer img {
+        height: 8rem;
+        width: 7rem;
+    }
+}
