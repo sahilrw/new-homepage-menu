@@ -30,6 +30,8 @@ header {
     margin: 1rem 0;
     font-size: 1.5rem;
 }
+#close-menu, #ham {
+    display: none
 nav {
     display: flex;
     justify-content: space-between;
