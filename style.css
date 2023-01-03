@@ -32,6 +32,7 @@ header {
 }
 #close-menu, #ham {
     display: none
+}
 nav {
     display: flex;
     justify-content: space-between;
